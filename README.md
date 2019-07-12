@@ -26,3 +26,4 @@ This includes workers, as specified in the qbwc gem, to trigger the requests and
 * Deployment instructions
 
 * At this point, this would be generously classified as a work in progress.  For now, the hashes in the Worker, which get transformed in qbXML, are hard-coded, to aid debugging.
+In addition, there is a chart of accounts worker, which adds one or more accounts to the chart in QuickBooks, then reads the result and adds those same accounts to a local chart of accounts table.
