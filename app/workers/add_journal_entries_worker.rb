@@ -7,19 +7,22 @@ class AddJournalEntriesWorker < QBWC::Worker
     {
       journal_entry_add_rq: {
         journal_entry_add: {
-          txn_date: '2019-07-02',
+          txn_date: '2019-07-12',
           journal_debit_line: {
             account_ref: {
               full_name: 'Operating Funds:Undeposited cash'
             },
-            amount: '301.00'
+            amount: '320.00'
           },
-          journal_credit_line: {
+          journal_credit_line: [{
             account_ref: {
               full_name: 'nmsInco4'
             },
-            amount: '301.00'
-          }
+            amount: '302.00'
+          },{
+            account_ref: { full_name: 'Direct Public Support:Tzedakah Fund'},
+            amount: '18.00'
+          }]
         }
       }
     }
