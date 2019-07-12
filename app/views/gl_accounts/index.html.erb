@@ -1,0 +1,28 @@
+<h1>Chart of accounts</h1>
+
+<table>
+  <tr>
+    <th>QB List ID</th>
+    <th>Edit Sequence</th>
+    <th>Name</th>
+    <th>Full Name</th>
+    <th>Account Type</th>
+    <th>Active</th>
+    <th colspan='3'>&nbsp;</th>
+  </tr>
+  <% @gl_accounts.each do |gl_account| %>
+    <tr>
+      <td><%= gl_account.qb_list_id %></td>
+      <td><%= gl_account.edit_sequence %></td>
+      <td><%= gl_account.name %></td>
+      <td><%= gl_account.full_name %></td>
+      <td><%= gl_account.account_type %></td>
+      <td><%= gl_account.is_active %></td>
+      <td><%= link_to 'Show', gl_account_path(gl_account) %></td>
+      <td><%= link_to 'Destroy', gl_account_path(gl_account),
+        method: :delete,
+        data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  <%= link_to 'New GL', new_gl_account_path %>
+</table>

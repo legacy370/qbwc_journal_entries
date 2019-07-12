@@ -1,0 +1,29 @@
+<p>
+<strong>QB List ID:</strong>
+<%= @gl_account.qb_list_id %>
+</p>
+<p>
+<strong>Edit Sequence:</strong>
+<%= @gl_account.edit_sequence %>
+</p>
+<p>
+  <strong>Name</strong>
+  <%= @gl_account.name %>
+</p>
+<p>
+  <strong>Full name</strong>
+  <%= @gl_account.full_name %>
+</p>
+
+<p>
+  <strong>Account type</strong>
+  <%= @gl_account.account_type %>
+</p>
+
+<p>
+  <strong>Active</strong>
+  <%= @gl_account.is_active %>
+</p>
+
+<%= link_to 'Edit', edit_gl_account_path(@gl_account) %>
+<%= link_to 'Back', gl_accounts_path %>

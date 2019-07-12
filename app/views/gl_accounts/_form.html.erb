@@ -1,0 +1,28 @@
+<%= form_with model: @gl_account, url: {action: 'new'}, local: true do |form| %>
+  <% if @gl_account.errors.any? %>
+    <div id='error_explanation'>
+      <h2>
+        <%= pluralize(@gl_account.errors.count, 'error') %> prohibited this article from being saved.
+      </h2>
+      <ul>
+        <% @gl_account.errors.full_messages.each do |err| %>
+          <li><%= err %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :qb_list_id %><br>
+    <%= form.text_field :qb_list_id %>
+  </p>
+
+  <p>
+    <%= form.label :edit_sequence %><br>
+    <%= form.text_field :edit_sequence %>
+  </p>
+
+  <p>
+    <%= form.submit class: 'nms-submit' %>
+  </p>
+<% end %>
