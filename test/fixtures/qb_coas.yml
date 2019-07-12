@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  qb_list_id: MyString
+  edit_sequence: MyString
+  name: MyString
+  full_name: MyString
+  account_type: MyString
+
+two:
+  qb_list_id: MyString
+  edit_sequence: MyString
+  name: MyString
+  full_name: MyString
+  account_type: MyString

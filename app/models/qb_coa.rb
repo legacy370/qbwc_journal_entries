@@ -1,0 +1,2 @@
+class QbCoa < ApplicationRecord
+end
