@@ -13,14 +13,14 @@ Uses the qbwc gem
 
 * Configuration
 
-* Database creation
-The usual Rails migration reside within this repository.  It uses Postgres, but all the database operations are standard.
+* Database creation:
+The usual Rails migrations reside within this repository.  It uses Postgres, but all the database operations are standard, and should work with any database.
 
 * Database initialization
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Services (job queues, cache servers, search engines, etc.):
 This includes workers, as specified in the qbwc gem, to trigger the requests and responses from the QuickBooks Web Connector.
 
 * Deployment instructions
