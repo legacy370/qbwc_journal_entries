@@ -7,18 +7,18 @@ class AddJournalEntriesWorker < QBWC::Worker
     {
       journal_entry_add_rq: {
         journal_entry_add: {
-          txn_date: '2019-07-12',
+          txn_date: '2019-07-14',
           journal_debit_line: {
             account_ref: {
               full_name: 'Operating Funds:Undeposited cash'
             },
-            amount: '320.00'
+            amount: '218.00'
           },
           journal_credit_line: [{
             account_ref: {
-              full_name: 'nmsInco4'
+              full_name: 'Direct Public Support:Music Fund'
             },
-            amount: '302.00'
+            amount: '200.00'
           },{
             account_ref: { full_name: 'Direct Public Support:Tzedakah Fund'},
             amount: '18.00'
@@ -36,7 +36,7 @@ class AddJournalEntriesWorker < QBWC::Worker
   end
 
   def handle_response(response, session, job, request, _data)
-    byebug
+    #byebug
     if response.is_a? Array
       my_response = response
     else
